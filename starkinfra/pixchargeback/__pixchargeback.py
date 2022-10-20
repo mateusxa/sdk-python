@@ -147,7 +147,7 @@ def page(cursor=None, limit=None, after=None, before=None, status=None, ids=None
 
 def update(id, result, rejection_reason=None, reversal_reference_id=None, analysis=None, user=None):
     """# Update PixChargeback entity
-    Respond to a received PixChargeback.
+    Update a PixChargeback by passing id.
     ## Parameters (required):
     - id [string]: PixChargeback id. ex: '5656565656565656'
     - result [string]: result after the analysis of the PixChargeback. Options: "rejected", "accepted", "partiallyAccepted"

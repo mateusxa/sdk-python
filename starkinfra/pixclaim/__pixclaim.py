@@ -17,7 +17,7 @@ class PixClaim(Resource):
     - branch_code [string]: branch code of the account claiming the PixKey. ex: "1234"
     - name [string]: holder's name of the account claiming the PixKey. ex: "Jamie Lannister"
     - tax_id [string]: holder's taxId of the account claiming the PixKey (CPF/CNPJ). ex: "012.345.678-90"
-    - key_id [string]: id of the registered Pix Key to be claimed. Allowed keyTypes are CPF, CNPJ, phone number or email. ex: "+5511989898989"
+    - key_id [string]: id of the registered PixKey to be claimed. Allowed keyTypes are CPF, CNPJ, phone number or email. ex: "+5511989898989"
     # Parameters (Options):
     - tags [list of strings, default []]: list of strings for tagging. ex: ["travel", "food"]
     ## Attributes (return-only):

@@ -92,7 +92,7 @@ _resource = {"class": PixRequest, "name": "PixRequest"}
 
 
 def create(requests, user=None):
-    """# Create PixRequests
+    """# Create PixRequest objects
     Send a list of PixRequest objects for creation at the Stark Infra API
     ## Parameters (required):
     - requests [list of PixRequest objects]: list of PixRequest objects to be created in the API

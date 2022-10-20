@@ -1313,7 +1313,7 @@ print(log)
 
 ### Create a PixClaim
 
-You can create a Pix claim to request the transfer of a Pix key from another bank to one of your accounts:
+You can create a PixClaim to request the transfer of a Pix key from another bank to one of your accounts:
 
 ```python
 import starkinfra
@@ -1358,7 +1358,7 @@ for claim in claims:
 
 ### Get a PixClaim
 
-After its creation, information on a Pix claim may be retrieved by its id.
+After its creation, information on a PixClaim may be retrieved by its id.
 
 ```python
 import starkinfra
@@ -1370,10 +1370,10 @@ print(claim)
 
 ### Update a PixClaim
 
-A Pix Claim can be confirmed or canceled by patching its status.
-A received Pix Claim must be confirmed by the donor to be completed.
-Ownership Pix Claims can only be canceled by the donor if the reason is "fraud".
-A sent Pix Claim can also be canceled.
+A PixClaim can be confirmed or canceled by patching its status.
+A received PixClaim must be confirmed by the donor to be completed.
+Ownership PixClaims can only be canceled by the donor if the reason is "fraud".
+A sent PixClaim can also be canceled.
 
 ```python
 import starkinfra
@@ -1790,7 +1790,7 @@ print(brcode)
 
 ### Verify a DynamicBrcode read
 
-When a DynamicBrcode is read by your user, a GET request will be made to the your regitered URL to 
+When a DynamicBrcode is read by your user, a GET request will be made to the your registered URL to 
 retrieve additional information needed to complete the transaction.
 Use this method to verify the authenticity of a GET request received at your registered endpoint.
 If the provided digital signature does not check out with the StarkInfra public key, a stark.exception.InvalidSignatureException will be raised.

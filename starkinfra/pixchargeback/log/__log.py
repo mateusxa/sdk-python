@@ -45,10 +45,10 @@ def query(ids=None, limit=None, after=None, before=None, types=None, chargeback_
     """# Retrieve PixChargeback.Log objects
     Receive a generator of PixChargeback.Log objects previously created in the Stark Infra API
     ## Parameters (optional):
-    - ids [list of strings, default None]: Log ids to filter PixChargeback Logs. ex: ["5656565656565656"]
     - limit [integer, default None]: maximum number of objects to be retrieved. Unlimited if None. ex: 35
     - after [datetime.date or string, default None]: date filter for objects created after specified date. ex: datetime.date(2020, 3, 10)
     - before [datetime.date or string, default None]: date filter for objects created before a specified date. ex: datetime.date(2020, 3, 10)
+    - ids [list of strings, default None]: Log ids to filter PixChargeback Logs. ex: ["5656565656565656"]
     - types [list of strings, default None]: filter retrieved objects by types. ex: ["created", "failed", "delivering", "delivered", "closed", "canceled"]
     - chargeback_ids [list of strings, default None]: list of PixChargeback IDs to filter retrieved objects. ex: ["5656565656565656", "4545454545454545"]
     - user [Organization/Project object, default None]: Organization or Project object. Not necessary if starkinfra.user was set before function call.
@@ -73,10 +73,10 @@ def page(cursor=None, ids=None, limit=None, after=None, before=None, types=None,
     Use this function instead of query if you want to manually page your chargebacks.
     ## Parameters (optional):
     - cursor [string, default None]: cursor returned on the previous page function call
-    - ids [list of strings, default None]: Log ids to filter PixChargeback Logs. ex: ["5656565656565656"]
     - limit [integer, default 100]: maximum number of objects to be retrieved. Max = 100. ex: 35
     - after [datetime.date or string, default None]: date filter for objects created after a specified date. ex: datetime.date(2020, 3, 10)
     - before [datetime.date or string, default None]: date filter for objects created before a specified date. ex: datetime.date(2020, 3, 10)
+    - ids [list of strings, default None]: Log ids to filter PixChargeback Logs. ex: ["5656565656565656"]
     - types [list of strings, default None]: filter retrieved objects by types. ex: ["created", "failed", "delivering", "delivered", "closed", "canceled"]
     - chargeback_ids [list of strings, default None]: list of PixChargeback IDs to filter retrieved objects. ex: ["5656565656565656", "4545454545454545"]
     - user [Organization/Project object, default None]: Organization or Project object. Not necessary if starkinfra.user was set before function call.

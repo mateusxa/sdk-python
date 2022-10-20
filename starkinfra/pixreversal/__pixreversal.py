@@ -51,7 +51,7 @@ _resource = {"class": PixReversal, "name": "PixReversal"}
 
 
 def create(reversals, user=None):
-    """# Create PixReversals
+    """# Create PixReversal objects
     Send a list of PixReversal objects for creation at the Stark Infra API
     ## Parameters (required):
     - reversals [list of PixReversal objects]: list of PixReversal objects to be created in the API
