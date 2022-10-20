@@ -147,7 +147,7 @@ def page(cursor=None, limit=None, after=None, before=None, status=None, tags=Non
 def update(id, reason, account_created=None, account_number=None, account_type=None, branch_code=None, name=None,
            user=None):
     """# Update PixKey entity
-    Update a PixKey parameters by passing id.
+    Update a PixKey parameters by passing its id.
     ## Parameters (required):
     - id [string]: PixKey id. ex: "+5511989898989"
     - reason [string]: reason why the PixKey is being patched. Options: "branchTransfer", "reconciliation" or "userRequested"

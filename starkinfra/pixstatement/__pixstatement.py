@@ -53,7 +53,7 @@ def create(statement, user=None):
 
 
 def get(id, user=None):
-    """# Retrieve a PixStatement object
+    """# Retrieve a specific PixStatement by its id
     Retrieve the PixStatement object linked to your Workspace in the Stark Infra API by its id.
     ## Parameters (required):
     - id [string]: object unique id. ex: "5656565656565656"

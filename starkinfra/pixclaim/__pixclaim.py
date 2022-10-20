@@ -133,7 +133,7 @@ def page(cursor=None, limit=None, after=None, before=None, status=None, ids=None
     - ids [list of strings, default None]: list of ids to filter retrieved objects. ex: ["5656565656565656", "4545454545454545"]
     - type [string, default None]: filter for the type of retrieved PixClaims. Options: "ownership" or "portability"
     - key_type [string, default None]: filter for the PixKey type of retrieved PixClaims. Options: "cpf", "cnpj", "phone", "email" and "evp"
-    - key_id [string, default None]: filter PixClaims linked to a specific PixKey id. Example: "+5511989898989"
+    - key_id [string, default None]: filter PixClaims linked to a specific PixKey id. ex: "+5511989898989"
     - flow [string, default None]: direction of the Pix Claim. Options: "in" if you received the PixClaim or "out" if you created the PixClaim.
     - tags [list of strings, default None]: list of strings to filter retrieved objects. ex: ["travel", "food"]
     - user [Organization/Project object, default None]: Organization or Project object. Not necessary if starkinfra.user was set before function call.

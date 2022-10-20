@@ -13,7 +13,7 @@ class Log(Resource):
     on the CreditNote.
     ## Attributes:
     - id [string]: unique id returned when the log is created. ex: "5656565656565656"
-    - note [CreditNote]: CreditNote entity to which the log refers to.
+    - note [CreditNote object]: CreditNote entity to which the log refers to.
     - errors [list of strings]: list of errors linked to this CreditNote event
     - type [string]: type of the CreditNote event which triggered the log creation. ex: "canceled", "created", "expired", "failed", "refunded", "registered", "sending", "sent", "signed", "success"
     - created [datetime.datetime]: creation datetime for the log. ex: datetime.datetime(2020, 3, 10, 10, 30, 0, 0)
