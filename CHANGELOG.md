@@ -14,6 +14,9 @@ Given a version number MAJOR.MINOR.PATCH, increment:
 
 ## [Unreleased]
 
+### Fixed
+- identity ids parameter on IndividualIdentityLog
+
 ## [0.4.0] - 2022-11-11
 ### Added
 - IndividualIdentity resource
