@@ -9,7 +9,10 @@ example_restock = IssuingRestock(
 )
 
 
-def generateExampleRestocksJson():
-    example_restock.count = randint(1, 1000)
-    example_restock.stockId = next(issuingstock.query(limit=1)).id
-    return example_restock
+def generateExampleRestocksJson(holder, n=1):
+    restocks = []
+    for _ in range(n):
+        example_restock.count = randint(1, 1000)
+        example_restock.stockId = next(issuingstock.query(limit=1)).id
+        restock.append(deepcopy(example_restock))
+    return restocks

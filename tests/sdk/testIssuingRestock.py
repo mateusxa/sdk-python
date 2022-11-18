@@ -29,8 +29,8 @@ class TestIssuingRestockGet(TestCase):
 class TestIssuingRestockPost(TestCase):
 
     def test_success(self):
-        example_restock = generateExampleRestocksJson()
-        restock = starkinfra.issuingrestock.create(example_restock)
+        example_restocks = generateExampleRestocksJson(n=5)
+        restock = starkinfra.issuingrestock.create(example_restocks)
         self.assertEqual(restock.id, str(restock.id))
         print(restock)
 
